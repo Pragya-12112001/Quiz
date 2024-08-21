@@ -451,28 +451,77 @@ function checkbtn10() {
 }
 
 
+// document.getElementById('result').onclick = function() {
 
+//     tright= a1 +a2+ a3+ a4+ a5 +a6+ a7+ a8 +a9+ a10  ;
+//     twrong= 10 - tright;
 
-const flowers = [
-    { id: 'h1', info: 'Dusty Miller: a perennial plant species in the genus Jacobaea native to the Mediterranean region.', img: './images/dustyMiller.jpg' },
-    { id: 'h2', info: 'Stock: also known as gillyflowers.', img: './images/Stock.jpg' },
-    { id: 'h3', info: 'Phalaenopsis Orchids: native to India, Taiwan, China, Southeast Asia, New Guinea, and Australia, with the majority in Indonesia and the Philippines.', img: './images/PhalaenopsisOrchids.jpg' },
-    { id: 'h4', info: 'Peonies: the official State Flower of Indiana.', img: './images/Peonies.jpg' },
-    { id: 'h5', info: 'Sunflowers: also the official State Flower of Indiana.', img: './images/Sunflowers.jpg' },
-    { id: 'h6', info: 'Dahlias: garden perennials that can be grown from seeds but are more commonly started with tubers/bulbs.', img: './images/Dahlias.jpg' },
-    { id: 'h7', info: 'Lilacs: Mackinac Island hosts an annual festival dedicated to this flower.', img: './images/Lilacs.jpg' },
-    { id: 'h8', info: 'Daisies: the flowers open with the first light of dawn and take their name from the Anglo Saxon for “day’s eye.”', img: './images/Daisies.jpg' },
-    { id: 'h9', info: 'Amaryllis: a small genus of flowering bulbs, with two species.', img: './images/Amaryllis.jpg' },
-    { id: 'h10', info: 'Hyacinths: native to the area of the eastern Mediterranean from the south of Turkey to Palestine, although naturalized more widely.', img: './images/Hyacinths.jpg' },
-  ];
-  
-  flowers.forEach(({ id, info, img }) => {
-    document.getElementById(id).onclick = function () {
-      swal(info, {
-        icon: img,
-      });
-    };
-  });
+//     swal("your total right is: "+tright, "your total wrong is: "+twrong,{
+
+//         icon:'https://static.thenounproject.com/png/729-200.png',
+//   });
+
+// }
+
+document.getElementById('h1').onclick = function () {
+    swal("  a perennial plant species in the genus Jacobaea native to the Mediterranean region ", {
+        icon: 'https://d1nfcimmipiaw0.cloudfront.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/d/u/dusty_miller_flat_leaf.jpg',
+    });
+}
+
+document.getElementById('h2').onclick = function () {
+    swal(" These are also known as gillyflowers.  ", {
+        icon: 'https://i.etsystatic.com/9817393/r/il/422538/1202540192/il_570xN.1202540192_eacl.jpg',
+    });
+}
+
+document.getElementById('h3').onclick = function () {
+    swal(" Orchids in this genus are native to India, Taiwan, China, Southeast Asia, New Guinea and Australia with the majority in Indonesia and the Philippines.  ", {
+        icon: 'https://www.growjoy.com/store/pc/catalog/white_orchid_plant__703_detail.jpg',
+    });
+}
+
+document.getElementById('h4').onclick = function () {
+    swal("These blossoms are also the official State Flower of Indiana.  ", {
+        icon: 'https://images.unsplash.com/photo-1575178094668-132dc931ad35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVvbnl8ZW58MHx8MHx8&w=1000&q=80',
+    });
+}
+
+document.getElementById('h5').onclick = function () {
+    swal(" These blossoms are also the official State Flower of Indiana.", {
+        icon: 'https://images.unsplash.com/photo-1588834747799-82f691b36ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3VuZmxvd2Vyc3xlbnwwfHwwfHw%3D&w=1000&q=80',
+    });
+}
+
+document.getElementById('h6').onclick = function () {
+    swal(" These garden perennials can be grown from seeds but can take more than one season to flower so are more commonly started with tubers/bulbs.  ", {
+        icon: 'https://www.gardenbythesea.org/site/assets/files/1912/bonnie_and_scott_married_tammie_gilchrist-0204.jpg',
+    });
+}
+
+document.getElementById('h7').onclick = function () {
+    swal(" Mackinac Island hosts an annual festival dedicated to this flower. ", {
+        icon: 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-11/hgic_shrubs_common_lilac_MT_1400.jpg?itok=gN_9SpYe"',
+    });
+}
+
+document.getElementById('h8').onclick = function () {
+    swal(" The flowers open with the first light of dawn and they take their name from the Anglo Saxon for “day’s eye.” ", {
+        icon: 'https://static.onecms.io/wp-content/uploads/sites/34/2020/04/16/gerbera-daisies-getty-0420.jpg',
+    });
+}
+
+document.getElementById('h9').onclick = function () {
+    swal(" It is a small genus of flowering bulbs, with two species. ", {
+        icon: 'https://b3n8a3n8.rocketcdn.me/wp-content/uploads/2021/12/amaryllis-hippeastrum-01-1140x1710.jpg',
+    });
+}
+
+document.getElementById('h10').onclick = function () {
+    swal("The genus is native to the area of the eastern Mediterranean from the south of Turkey to Palestine, although naturalized more widely.  ", {
+        icon: 'https://gardenerspath.com/wp-content/uploads/2018/03/Everything-You-Need-to-Know-to-Grow-Hyacinths.jpg',
+    });
+}
 
 
 // tanishqa code
