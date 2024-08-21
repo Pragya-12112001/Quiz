@@ -598,7 +598,7 @@ function score() {
         body.appendChild(button);
 
         button.addEventListener("click", function () {
-            window.location.href = "main-quiz.html";
+            window.location.href = "index.html";
         });
 
         var button1 = document.createElement("button");
@@ -669,7 +669,7 @@ function score() {
         body.appendChild(button);
 
         button.addEventListener("click", function () {
-            window.location.href = "quiz.html";
+            window.location.href = "index.html";
         });
 
         var button1 = document.createElement("button");
