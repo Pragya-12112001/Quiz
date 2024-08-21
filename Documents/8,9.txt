@@ -1,0 +1,150 @@
+EXPERIMENT - 8
+
+<?xml version="1.0" encoding="utf-8"?> 
+<?xml-stylesheet type="text/css" href="student.css"?> 
+<CSVTU> 
+<STUDENT> 
+<USN>1GD11CS001</USN> 
+<NAME>Arun Kumar</NAME> 
+<COLLEGE> BIT Raipur </COLLEGE> 
+<BRANCH>Computer Science and Engineering</BRANCH> 
+<YEAR>2021</YEAR> 
+<EMAILID>arunk@gmail.com</EMAILID> 
+</STUDENT> 
+<STUDENT> 
+<USN>1GD10ME012</USN> 
+<NAME> Swaroop Jain </NAME> 
+<COLLEGE> BIT Raipur</COLLEGE> 
+<BRANCH>Mechanical Engineering</BRANCH> 
+<YEAR>2021</YEAR> 
+<EMAILID>swaroopj@gmail.com</EMAILID> 
+</STUDENT> 
+<STUDENT> 
+<USN>1GD12CS030</USN> 
+<NAME> Pradeep Sharma </NAME> 
+<COLLEGE> BIT Raipur </COLLEGE> 
+<BRANCH> Computer Science and Engineering </BRANCH> 
+<YEAR>2021</YEAR> 
+<EMAILID>spradeepl@gmail.com</EMAILID> 
+</STUDENT> 
+</CSVTU>
+
+
+
+CSVTU 
+{ 
+background-color: #ffFFff; 
+width: 100%; 
+} 
+STUDENT 
+{ 
+display: block; 
+margin-bottom: 30pt; 
+margin-left: 0; 
+} 
+USN,NAME 
+{ 
+color: #FF9900; 
+font-size: 14pt; 
+} 
+COLLEGE,BRANCH,YEAR 
+{ 
+display: block; 
+color: #000000; 
+margin-left: 20pt; 
+} 
+EMAILID 
+{ 
+display: block; 
+color: #0000FF; 
+margin-left: 20pt; 
+font-style: italic; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EXPERIMENT – 9
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+<xsl:template match="/"> 
+<html> 
+<head> 
+<style> 
+table,th,td 
+{ border:1px solid black; 
+border-collapse:collapse; 
+} 
+</style> 
+</head> 
+<body> 
+<h2>CSVTU Student Details</h2> 
+<table> 
+<tr bgcolor="#EEDD82" > 
+<th> USN</th> 
+<th> Name </th> 
+<th>College </th> 
+<th> Branch </th> 
+<th> Year </th> 
+<th> Email ID </th> 
+</tr> 
+<xsl:for-each select="CSVTU/STUDENT"> 
+<tr> 
+<td><xsl:value-of select="USN"/></td> 
+<td><xsl:value-of select="NAME"/></td> 
+<td><xsl:value-of select="COLLEGE"/></td> 
+<td><xsl:value-of select="BRANCH"/></td> 
+<td><xsl:value-of select="YEAR"/></td> 
+<td><xsl:value-of select="EMAILID"/></td> 
+</tr> 
+</xsl:for-each> 
+</table> 
+</body> 
+</html> 
+</xsl:template> 
+</xsl:stylesheet>
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?> 
+<?xml-stylesheet type="text/xsl" href="stud.xsl"?>
+<CSVTU> 
+<STUDENT> 
+<USN>1GD11CS001</USN> 
+<NAME>Arun Kumar</NAME> 
+<COLLEGE>GOPALAN College of Engineering</COLLEGE> 
+<BRANCH>Computer Science and Engineering</BRANCH> 
+<YEAR>2011</YEAR> 
+<EMAILID>arunk@gmail.com</EMAILID> 
+</STUDENT> 
+<STUDENT> 
+<USN>1GD10ME012</USN> 
+<NAME>Swaroop Jain</NAME> 
+<COLLEGE> GOPALAN College of Engineering</COLLEGE> 
+<BRANCH>Mechanical Engineering</BRANCH> 
+<YEAR>2010</YEAR> 
+<EMAILID>swaroopj@gmail.com</EMAILID> 
+</STUDENT> 
+<STUDENT> 
+<USN>1GD12CS030</USN> 
+<NAME>Pradeep Sharma</NAME> 
+<COLLEGE> GOPALAN College of Engineering</COLLEGE> 
+<BRANCH> Computer Science and Engineering </BRANCH> 
+<YEAR>2012</YEAR> 
+<EMAILID>spradeepl@gmail.com</EMAILID> 
+</STUDENT> 
+</CSVTU>
